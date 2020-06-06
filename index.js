@@ -1,4 +1,9 @@
+const baseURL = 'https://anapioficeandfire.com/api/books'
+
 function fetchBooks() {
+  fetch(baseURL)
+  .then(resp => resp.json())
+  .then(json => console.log(json));
 
 }
 
